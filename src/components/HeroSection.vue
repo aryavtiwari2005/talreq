@@ -178,7 +178,7 @@
         }
 
         .hero-section {
-            height: 50vh;
+            height: 35vh;
         }
     }
 </style>

@@ -92,7 +92,6 @@ export default {
     border: 2px solid #3AD4C5;
     border-radius: 10px;
     padding: 20px;
-    padding-right: 0;
     height: 250px;
 }
 

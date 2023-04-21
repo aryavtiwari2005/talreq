@@ -55,8 +55,8 @@ export default {
     width: 100%;
 }
 
-.navbar img {
-    height: 10vh;
+.navbar .logo img {
+    height: 70px;
 }
 
 .navbar ul {
@@ -108,13 +108,17 @@ export default {
 
 @media only screen and (max-width: 650px) {
 
+    .navbar .logo img {
+        height: 50px;
+    }
+
     .navbar .hamburger {
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
     }
 
     .navbar .hamburger .line {
