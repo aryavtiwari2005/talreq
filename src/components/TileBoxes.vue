@@ -8,7 +8,10 @@
             <img src="../assets/TileBox1.png">
         </div>
         <div class="box2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc </p>
+            <div class="sub-box2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc </p>
+                <a href="google.com">Register</a>
+            </div>
             <img src="../assets/TileBox3.png">
         </div>
     </div>
@@ -41,16 +44,19 @@ export default {
     margin: 10px;
 }
 
-.tiles .box1 p {
+.tiles p {
     font-size: 18px;
     align-self: flex-start;
-}
-
-.tiles p {
     color: #5C6884;
 }
 
 .tiles .box1 .sub-box1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tiles .box2 .sub-box2 {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -64,7 +70,7 @@ export default {
     width: 15vw;
 }
 
-.tiles .box1 .sub-box1 a {
+.tiles a {
     justify-self: start;
     text-decoration: none;
     width: 100px;
@@ -95,7 +101,7 @@ export default {
         width: 80%;
     }
 
-    .tiles .box1 p {
+    .tiles p {
         font-size: 15px;
     }
 
@@ -109,11 +115,10 @@ export default {
 
     .tiles .box2 {
         width: 80%;
-        padding-left: 40px;
     }
 
     .tiles .box2 img {
-        width: 100px;
+        width: 110px;
     }
 
     .tiles .box1 img {

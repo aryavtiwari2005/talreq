@@ -19,12 +19,14 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 @font-face {
   font-family: "Lokeya";
   src: local("Lokeya"), url('./assets/Lokeya.ttf') format("truetype");
 }
 
 #app {
-  font-family: 'Lokeya';
+  font-family: 'Outfit';
 }
 </style>
