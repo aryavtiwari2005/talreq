@@ -52,7 +52,6 @@ export default {
     justify-content: space-around;
     align-items: center;
     height: 12vh;
-    width: 100%;
 }
 
 .navbar .logo img {
@@ -107,6 +106,11 @@ export default {
 }
 
 @media only screen and (max-width: 650px) {
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
 
     .navbar .logo img {
         height: 50px;

@@ -1,16 +1,14 @@
 <template>
     <div class="hero-section">
-        <h1>Recruitment Made</h1>
-        <h1 class="simple">Simple<span><img src="../assets/Ellipse5.png" id="ellipse5"><img src="../assets/Vector1.png" id="vector1"><img src="../assets/Ellipse6.png" id="ellipse6"></span></h1>
-        <p>The most secure marketplace for buying and selling unique crypto assets.</p>
-        <a href="google.com">Register</a>
+        <h1>Hiring <span>Simplified,</span><span class="highlighter"></span></h1>
+        <h1>Talent Amplified!</h1>
+        <p>Empowering companies and aspirants by streamlining hiring and advocating talent.</p>
+        <a href="google.com">Know More</a>
         <div class="blobs">
             <img src="../assets/Ellipse1.png" id="blob1"><img src="../assets/face1.png" class="face1">
             <img src="../assets/Ellipse2.png" id="blob2"><img src="../assets/face2.png" class="face2">
             <img src="../assets/Ellipse3.png" id="blob3"><img src="../assets/face3.png" class="face3">
             <img src="../assets/Ellipse4.png" id="blob4"><img src="../assets/face4.png" class="face4">
-            <img src="../assets/Ellipse7.png" id="blob7">
-            <img src="../assets/Ellipse8.png" id="blob8">
         </div>
     </div>
 </template>
@@ -36,52 +34,42 @@
     .hero-section h1 {
         position: relative;
         margin: 0;
-        padding-bottom: 10px;
         letter-spacing: 1px;
         font-size: 40px;
         color: #5C6884;
         text-align: center;
     }
 
-    .hero-section h1 span img#ellipse5 {
-        position: absolute;
-        height: 60px;
-        right: -25%;
-        top: -10%;
-        z-index: -1;
+    .hero-section h1 span {
+        color: #3AD4C5;
     }
 
-    .hero-section h1 span img#vector1 {
+    .hero-section h1 span.highlighter {
         position: absolute;
+        width: 195px;
         height: 20px;
-        bottom: -20%;
-        right: -15%;
-    }
-
-    .hero-section h1 span img#ellipse6 {
-        position: absolute;
-        height: 8px;
-        bottom: 5%;
-        right: -25%;
+        left: 38%;
+        transform: skew(20deg);
+        top: 60%;
+        background-color: rgba(0, 149, 217, 0.4);
     }
 
     .hero-section p {
         width: 30%;
         font-size: 15px;
         text-align: center;
-        margin: 20px 0;
         color: #5C6884;
     }
     .hero-section a {
         text-decoration: none;
         color: white;
         background-color: #5C6884;
-        width: 250px;
+        width: 200px;
         font-size: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 50px;
+        padding: 10px;
         border-radius: 10px;
         font-weight: lighter;
         letter-spacing: 2px;
@@ -90,13 +78,13 @@
     .hero-section .blobs img.face1 {
         position: absolute;
         left: 11%;
-        top: 5%;
+        top: 6%;
         height: 100px;
     }
 
     .hero-section .blobs img.face2 {
         position: absolute;
-        right: 11%;
+        right: 9%;
         top: 15%;
         height: 80px;
     }    
@@ -119,7 +107,7 @@
         position: absolute;
         left: 10%;
         top: 10%;
-        height: 100px;
+        height: 110px;
     }
 
     .hero-section .blobs img#blob2 {
@@ -143,20 +131,6 @@
         height: 90px;
     }
 
-    .hero-section .blobs img#blob7 {
-        position: absolute;
-        right: 25%;
-        top: 10%;
-        height: 40px;
-    }
-
-    .hero-section .blobs img#blob8 {
-        position: absolute;
-        left: 20%;
-        bottom: 10%;
-        height: 50px;
-    }
-
     .hero-section .blobs {
         position: absolute;
         z-index: -10;
@@ -165,12 +139,18 @@
     }
 
     @media screen and (max-width: 650px) {
+
+        .hero-section a {
+            width: 170px;
+            font-size: 18px;
+        }
+
         .hero-section .blobs {
             display: none;
         }
 
         .hero-section h1 {
-            font-size: 34px;
+            font-size: 33px;
         }
 
         .hero-section p {
@@ -179,6 +159,17 @@
 
         .hero-section {
             height: 35vh;
+        }
+
+        .hero-section h1 span.highlighter {
+            width: 170px;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .hero-section h1 span.highlighter {
+            left: 10%;
+            top: 80%;
         }
     }
 </style>

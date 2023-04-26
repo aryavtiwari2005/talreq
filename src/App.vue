@@ -3,6 +3,8 @@
   <HeroSection></HeroSection>
   <ClientList></ClientList>
   <TileBoxes></TileBoxes>
+  <NetworkTile></NetworkTile>
+  <BlockTiles></BlockTiles>
 </template>
 
 <script>
@@ -10,10 +12,12 @@ import NavBar from './components/NavBar.vue';
 import HeroSection from './components/HeroSection.vue';
 import ClientList from './components/ClientList.vue';
 import TileBoxes from './components/TileBoxes.vue';
+import NetworkTile from './components/NetworkTile.vue';
+import BlockTiles from './components/BlockTiles.vue';
 export default {
   name: 'App',
   components: {
-    NavBar, HeroSection, ClientList, TileBoxes
+    NavBar, HeroSection, ClientList, TileBoxes, NetworkTile, BlockTiles
   }
 }
 </script>

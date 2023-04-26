@@ -67,7 +67,7 @@ export default {
 }
 
 .tiles .box2 img {
-    width: 15vw;
+    width: 10vw;
 }
 
 .tiles a {
@@ -88,9 +88,9 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
     border: 2px solid #3AD4C5;
     border-radius: 10px;
+    width: 30%;
     padding: 20px;
     height: 250px;
 }
