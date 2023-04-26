@@ -171,5 +171,9 @@
             left: 10%;
             top: 80%;
         }
+
+        .hero-section {
+            height: 60vh;
+        }
     }
 </style>
