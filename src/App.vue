@@ -30,6 +30,11 @@ export default {
   src: local("Lokeya"), url('./assets/Lokeya.ttf') format("truetype");
 }
 
+@font-face {
+  font-family: 'Zabal';
+  src: local("Zabal"), url('./assets/ZabalDEMO-Black.otf') format("opentype"); 
+}
+
 #app {
   font-family: 'Outfit';
 }

@@ -109,7 +109,14 @@ export default {
 
     .navbar {
         justify-content: space-between;
+        position: relative;
         padding: 0 20px;
+    }
+
+    .navbar .links {
+        position: absolute;
+        left: 0;
+        padding: 0;
     }
 
     .navbar .logo img {
