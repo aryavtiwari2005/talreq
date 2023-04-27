@@ -5,6 +5,7 @@
   <TileBoxes></TileBoxes>
   <NetworkTile></NetworkTile>
   <BlockTiles></BlockTiles>
+  <EndFooter></EndFooter>
 </template>
 
 <script>
@@ -14,10 +15,11 @@ import ClientList from './components/ClientList.vue';
 import TileBoxes from './components/TileBoxes.vue';
 import NetworkTile from './components/NetworkTile.vue';
 import BlockTiles from './components/BlockTiles.vue';
+import EndFooter from './components/EndFooter.vue';
 export default {
   name: 'App',
   components: {
-    NavBar, HeroSection, ClientList, TileBoxes, NetworkTile, BlockTiles
+    NavBar, HeroSection, ClientList, TileBoxes, NetworkTile, BlockTiles, EndFooter
   }
 }
 </script>

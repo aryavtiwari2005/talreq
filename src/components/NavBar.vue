@@ -19,7 +19,7 @@ let id = 0;
 export default {
     data() {
         return {
-            navToggle: false,
+            navToggle: true,
             elements: [
                 { id: id++, text: "About" },
                 { id: id++, text: "Insights" },
