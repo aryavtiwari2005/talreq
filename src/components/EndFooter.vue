@@ -102,9 +102,9 @@ export default {
 }
 
 .end-footer .newsletter form input {
-    height: 40px;
+    height: 100%;
+    width: 100%;
     border: none;
-    width: 250px;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -144,11 +144,22 @@ export default {
 
     .end-footer img {
         height: fit-content;
-        width: 250px;
+        width: 200px;
     }
     
     .end-footer .newsletter p {
         text-align: center;
+        width: 70%;
+    }
+
+    .end-footer .newsletter form {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .end-footer {
+        height: 70vh;
     }
 }
 </style>
