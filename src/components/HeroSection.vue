@@ -175,9 +175,9 @@
 
     @media screen and (max-width: 350px) {
         .hero-section h1 img.highlighter {
-            top: 35%;
-            height: 80px;
-            left: 15%;
+            top: 32%;
+            height: 75px;
+            left: 10%;
         }
 
         .hero-section {
