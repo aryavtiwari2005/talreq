@@ -1,6 +1,6 @@
 <template>
     <div class="blockTiles">
-        <h1 id="phone">Blocks</h1>
+        <h1 id="phone">TalentLink</h1>
         <div class="blocks">
             <div class="blocks1">
                 <div class="block1">
