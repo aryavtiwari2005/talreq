@@ -1,6 +1,6 @@
 <template>
     <div class="hero-section">
-        <h1>Hiring <span>Simplified,</span><span class="highlighter"></span></h1>
+        <h1>Hiring <span>Simplified,</span><img src="../assets/marker.png" class="highlighter"></h1>
         <h1>Talent Amplified!</h1>
         <p>Empowering companies and aspirants by streamlining hiring and advocating talent.</p>
         <a href="google.com">Know More</a>
@@ -29,6 +29,7 @@
         width: 80%;
         height: 70vh;
         margin: auto;
+        margin-top: 10vh;
     }
 
     .hero-section h1 {
@@ -38,20 +39,22 @@
         font-size: 40px;
         color: #5C6884;
         text-align: center;
+        z-index: 10;
     }
 
     .hero-section h1 span {
         color: #3AD4C5;
+        margin-left: 10px;
     }
 
-    .hero-section h1 span.highlighter {
+    .hero-section h1 img.highlighter {
         position: absolute;
-        width: 195px;
-        height: 20px;
-        left: 38%;
-        transform: skew(20deg);
-        top: 60%;
-        background-color: rgba(0, 149, 217, 0.4);
+        left: 33%;
+        top: -40%;   
+        transform: rotate(10deg);
+        height: 90px;
+        z-index: -1;
+        pointer-events: none;
     }
 
     .hero-section p {
@@ -140,6 +143,10 @@
 
     @media screen and (max-width: 650px) {
 
+        .hero-section h1 img.highlighter {
+            height: 80px;
+        }
+
         .hero-section a {
             width: 170px;
             font-size: 18px;
@@ -167,9 +174,10 @@
     }
 
     @media screen and (max-width: 350px) {
-        .hero-section h1 span.highlighter {
-            left: 10%;
-            top: 80%;
+        .hero-section h1 img.highlighter {
+            top: 35%;
+            height: 80px;
+            left: 15%;
         }
 
         .hero-section {

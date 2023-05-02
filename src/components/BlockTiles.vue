@@ -6,31 +6,30 @@
                 <div class="block1">
                     <img src="../assets/Block1.png">
                     <span class="circle" id="circle1"></span>
-                    <h2>Lorem</h2>
+                    <h2>Capabilities</h2>
                 </div>
                 <div class="block2">
                     <img src="../assets/Block2.png">
                     <span class="circle" id="circle2"></span>
-                    <h2>Ipsum</h2>
+                    <h2>Industries</h2>
                 </div>
             </div>
             <div class="blocks2">
                 <div class="block3">
                     <img src="../assets/Block3.png">
                     <span class="circle" id="circle3"></span>
-                    <h2>Dolor</h2>
+                    <h2>Insights</h2>
                 </div>
                 <div class="block4">
                     <img src="../assets/Block4.png">
                     <span class="circle" id="circle4"></span>
-                    <h2>Conse</h2>
+                    <h2>Company</h2>
                 </div>
             </div>
         </div>
         <div class="content">
-            <h1 id="computer">Blocks</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi.</p>
-            <p id="computer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi.</p>
+            <h1 id="computer">TalentLink</h1>
+            <p>talentLink is a unique recruitment methodology developed by talreq that enables us to effectively hire the best candidates for our clients.</p>
         </div>
     </div>
 </template>

@@ -1,8 +1,8 @@
 <template>
     <div class="network-tile">
         <div class="content">
-            <h2>NETWORKS</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi.</p>
+            <h2>TALENTLINK</h2>
+            <p>Our patented methodology that ensuring opportunity meets the right talent, at the right time</p>
             <a>Register</a>
         </div>
         <div class="images">

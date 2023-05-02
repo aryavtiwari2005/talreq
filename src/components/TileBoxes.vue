@@ -2,15 +2,15 @@
     <div class="tiles">
         <div class="box1">
             <div class="sub-box1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc </p>
-                <a href="google.com">Register</a>
+                <h1>Corporate</h1>
+                <a href="google.com">Simplify Hiring</a>
             </div>
             <img src="../assets/TileBox1.png">
         </div>
         <div class="box2">
             <div class="sub-box2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc </p>
-                <a href="google.com">Register</a>
+                <h1>Candidate</h1>
+                <a href="google.com">Amplify Talent</a>
             </div>
             <img src="../assets/TileBox3.png">
         </div>
@@ -44,8 +44,8 @@ export default {
     margin: 10px;
 }
 
-.tiles p {
-    font-size: 18px;
+.tiles h1 {
+    font-size: 24px;
     align-self: flex-start;
     color: #5C6884;
 }
@@ -73,15 +73,15 @@ export default {
 .tiles a {
     justify-self: start;
     text-decoration: none;
-    width: 100px;
+    width: max-content;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     background-color: #5C6884;
-    padding: 10px 30px;
-    font-size: 20px;
-    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 20px;
 }
 
 .tiles .box2 {
