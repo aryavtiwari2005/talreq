@@ -95,7 +95,7 @@ export default {
 
 .blockTiles .blocks img {
     z-index: 1;
-    height: 80px;
+    height: 50px;
 }
 
 .blockTiles .blocks .circle {
@@ -103,7 +103,7 @@ export default {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    top: 10%;
+    top: 8%;
     background-color: #D9D9D9;
 }
 

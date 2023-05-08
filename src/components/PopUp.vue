@@ -1,5 +1,6 @@
 <template>
     <div class="popup">
+        <h1>{{  heading }}</h1>
         <p>{{ popupcontent }}</p>
     </div>
 </template>
@@ -7,23 +8,22 @@
 <script>
 export default {
     name: "PopUp",
-    props: ['popupcontent']
+    props: ['popupcontent', 'heading']
 }
 </script>
 
-<style>
+<style scoped>
 .popup {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
-    height: 70%;
+    width: 30%;
+    height: 50%;
     padding: 50px;
     z-index: 999;
     border-radius: 10px;
-    border: 2px solid black;
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 @media screen and (max-width: 700px) {

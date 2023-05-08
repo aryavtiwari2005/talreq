@@ -4,8 +4,11 @@
         <div class="client-box">
             <img src="../assets/client1.png">
             <img src="../assets/client2.png">
-            <img src="../assets/client3.png">
+            <img src="../assets/client3.png" style="width: 5vw;">
             <img src="../assets/client4.png">
+            <img src="../assets/client5.png">
+            <img src="../assets/client6.png" style="width: 4vw;">
+            <img src="../assets/client7.png">
         </div>
     </div>
 </template>
@@ -18,6 +21,7 @@ export default {
 
 <style>
 .client-list {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -34,14 +38,16 @@ export default {
 .client-list .client-box {
     width: 100%;
     height: 10vh;
-    background-color: #3AD4C5;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .client-list .client-box img {
-    width: 10vw;
+    width: 7vw;
+    position: relative;
 }
 
 @media screen and (max-width: 650px) {
@@ -51,6 +57,16 @@ export default {
 
     .client-list .client-box img {
         width: 20vw;
+    }
+}
+
+@keyframes scroller {
+    0% {
+        transform: translateX(-10vw);
+    }
+
+    100% {
+        transform: translateX(70vw);
     }
 }
 </style>

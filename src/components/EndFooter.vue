@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .end-footer {
     display: flex;
     justify-content: space-around;
@@ -54,7 +54,7 @@ export default {
 }
 
 .end-footer img {
-    height: 12vh;
+    height: 55px;
 }
 
 .end-footer .columns {

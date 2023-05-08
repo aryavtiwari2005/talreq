@@ -4,8 +4,8 @@
         <div class="cross" @click="popup(popupid)"><div class="line1"></div><div class="line2"></div></div>
     </div>
     <div class="tile" @click="popup(popupid)">
+        <img :src="imageLink">
         <h1>{{ title }}</h1>
-        <p>{{ content }}</p>
     </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
     components: {
         PopUp
     },
-    props: ['title', 'content', 'popupcontent', 'popupid'],
+    props: ['title', 'content', 'popupcontent', 'popupid', 'imageLink'],
     data () {
         return {
             toggle: true
@@ -34,12 +34,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .tile {
     display: flex;
     color: #5C6884;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
     height: 150px;
     width: 250px;
     border: 2px solid #0095D9;
@@ -55,6 +55,10 @@ export default {
     text-align: center;
 }
 
+.tile img {
+    height: 100px;
+}
+
 .tile p {
     text-align: center;
 }
@@ -65,28 +69,29 @@ export default {
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     z-index: 1000;
 }
 
 .pop-up .cross .line1, .pop-up .cross .line2 {
+    position: absolute;
     width: 20px;
     height: 3px;
     background-color: black;
 }
 
 .pop-up .cross .line1 {
-    transform: skewY(45deg) translate(0%, 50%);
+    transform: rotate(45deg);
 }
 
 .pop-up .cross .line2 {
-    transform: skewY(-45deg) translate(0%, -50%);
+    transform: rotate(-45deg);
 }
 
 .pop-up .cross {
     position: fixed;
-    top: 12%;
-    right: 12%;
+    top: 20%;
+    right: 33%;
     padding: 10px;
     cursor: pointer;
     z-index: 999;

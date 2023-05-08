@@ -24,7 +24,7 @@ export default {
         return {
             navToggle: true,
             elements: [
-                { id: id++, text: "Capabilities", stuff: "Executive Search <br> Professional Search <br> Contract Recruiters <br> Project Recruitment <br> Recruitment Process Outsourcing (RPO) <br> Interim Executives <br> Talent Mapping and Market Research", link: "/capabilities" },
+                { id: id++, text: "Capabilities", stuff: '<div class="main-grid"> <div class="grid"> <h3 style="margin-top: 0;">Executive Search</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus facilis e</p> </div> <div class="grid"> <h3>Professional Search</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus facilis e</p> </div> <div class="grid"> <h3>Contract Recruiters</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus facilis e</p> </div> <div class="grid"> <h3>Project Recruitment</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus facilis e</p> </div> <div class="grid"> <h3>Recruitment Process Outsourcing (RPO)</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus facilis e</p> </div> <div class="grid"> <h3>Interim Executives</h3> <p>Lorem ipsum dolor sit amet</p> </div> <div class="grid"> <h3>Talent Mapping and Market Research</h3> <p>Lorem ipsum dolor sit amet</p> </div> </div> <style> .main-grid .grid { font-size: 14px; } .main-grid .grid h3 { color: #5C6884; } .main-grid .grid p { font-size: 12px; margin: 0 0;} .main-grid .grid { border-bottom: 1px solid #5C6884; } </style>', link: "/capabilities" },
                 { id: id++, text: "Industries", stuff: "Tech <br> Non-Tech <br> Startup ", link: "/industries" },
                 { id: id++, text: "Insights", stuff: "ipsum dolor lorem", link: "/insights" },
                 { id: id++, text: "Company", stuff: "impsum lorem dolor", link: "/company" }
@@ -58,7 +58,7 @@ export default {
 }
 
 .navbar .logo img {
-    height: 70px;
+    height: 55px;
     cursor: pointer;
 }
 
@@ -84,35 +84,17 @@ export default {
     position: relative;
 }
 
-.navbar ul li span {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 10px solid rgb(63, 194, 255);
-}
-
-.navbar ul li:hover span {
-    display: block;
-}
-
 .navbar ul li:hover .stuff {
     display: block;
     z-index: 10;
     position: absolute;
     width: max-content;
     padding: 20px;
-    background-color: rgb(63, 194, 255);
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
-    top: calc(100% + 10px);
+    top: calc(100% + 5px);
 }
-
 .navbar .hamburger {
     display: none;
 }
@@ -139,14 +121,16 @@ export default {
     }
 
     .navbar .links ul {
-        display: none;
+        opacity: 0;
+        pointer-events: none;
     }
 
     .navbar .links {
         position: absolute;
         display: flex;
-        z-index: 10;
+        z-index: -1;
         height: 0;
+        top: 12vh;
         left: 0;
         padding: 0;
         transition: all 0.5s ease-in-out;
@@ -161,7 +145,7 @@ export default {
         top: 12vh;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-start;
         padding: 0;
         margin: 0;
         transition: all 0.5s ease-in-out;
@@ -169,12 +153,13 @@ export default {
 
     .navbar .links ul.active {
         display: flex;
+        opacity: 1;
+        pointer-events: all;
         flex-direction: column;
-        height: 100%;
-        justify-content: space-around;
-        width: 100%;
+        justify-content: center;
         margin: none;
         padding: none;
+        transition: all 1s ease-in-out;
     }
 
     .navbar .logo img {

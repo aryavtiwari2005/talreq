@@ -1,29 +1,55 @@
 <template>
+    <div class="pop-up" id="popupcorp" style="display: none;">
+        <PopUp popupcontent="corporate content"></PopUp>
+        <div class="cross" @click="popup('popupcorp')"><div class="line1"></div><div class="line2"></div></div>
+    </div>
+    <div class="pop-up" id="popupcand" style="display: none;">
+        <PopUp popupcontent="candidate content"></PopUp>
+        <div class="cross" @click="popup('popupcand')"><div class="line1"></div><div class="line2"></div></div>
+    </div>
     <div class="tiles">
         <div class="box1">
             <div class="sub-box1">
                 <h1>Corporate</h1>
-                <a href="google.com">Simplify Hiring</a>
+                <a @click="popup('popupcorp')">Simplify Hiring</a>
             </div>
-            <img src="../assets/TileBox1.png">
+            <img src="../assets/corporate_tile.png">
         </div>
         <div class="box2">
             <div class="sub-box2">
                 <h1>Candidate</h1>
-                <a href="google.com">Amplify Talent</a>
+                <a @click="popup('popupcand')">Amplify Talent</a>
             </div>
-            <img src="../assets/TileBox3.png">
+            <img src="../assets/candidate_tile.png">
         </div>
     </div>
 </template>
 
 <script>
+import PopUp from './PopUp.vue';
 export default {
-    name: "TileBoxes"
+    name: "TileBoxes",
+    components: {
+        PopUp
+    },
+    data () {
+        return {
+            toggle: true
+        }
+    },  
+    methods: {
+        popup: function(id) {
+            if(this.toggle) {
+                document.querySelector('.pop-up#' + id).style = "display: flex;"
+            }
+            else document.querySelector('.pop-up#' + id).style = "display: none;"
+            this.toggle = !this.toggle
+        }
+    }
 }
 </script>
 
-<style>
+<style scoped>
 .tiles {
     display: flex;
     align-items: center;
@@ -63,7 +89,7 @@ export default {
 }
 
 .tiles .box1 img {
-    width: 10vw;
+    width: 12vw;
 }
 
 .tiles .box2 img {
@@ -82,6 +108,7 @@ export default {
     padding: 10px 25px;
     font-size: 16px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .tiles .box2 {
@@ -93,6 +120,46 @@ export default {
     width: 30%;
     padding: 20px;
     height: 250px;
+}
+.pop-up {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+.pop-up .cross .line1, .pop-up .cross .line2 {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: black;
+}
+.pop-up .cross .line1 {
+    transform: rotate(45deg);
+}
+
+.pop-up .cross .line2 {
+    transform: rotate(-45deg);
+}
+
+.pop-up .cross {
+    position: fixed;
+    top: 20%;
+    right: 33%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+@media screen and (max-width: 700px) {
+
+    .pop-up .cross{
+        top: 16%;
+        right: 15%;
+    }
 }
 
 @media screen and (max-width: 650px) {
