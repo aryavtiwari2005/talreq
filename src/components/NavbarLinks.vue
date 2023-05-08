@@ -102,8 +102,9 @@ export default {
         margin: 10px 0;
     }
 
-    .pop-up .cross {
-        top: 17%;
+    .pop-up .cross{
+        top: 16%;
+        right: 15%;
     }
 }
 </style>
