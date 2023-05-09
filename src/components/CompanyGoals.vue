@@ -31,7 +31,7 @@ export default {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
 }
@@ -46,14 +46,19 @@ export default {
 
 .company-goals .clients-helped h3 {
     text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: 0;
 }
 
 .company-goals .clients-helped h2 {
     margin: 0 0;
+    font-size: 36px;
+    font-weight: lighter;
 }
 
 .company-goals .clients-helped img {
-    height: 70px;
+    height: 100px;
 }
 
 @media screen and (max-width: 650px) {
@@ -66,7 +71,7 @@ export default {
     }
 
     .company-goals .clients-helped {
-        flex: 1 1 100px;
+        flex: 1 1 150px;
     }
 }
 </style>

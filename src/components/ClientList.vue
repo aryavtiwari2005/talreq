@@ -1,13 +1,14 @@
 <template>
     <div class="client-list">
-        <h1>OUR CLIENTS</h1>
+        <img src="../assets/handshake.png">
+        <h1>Our Partners</h1>
         <div class="client-box">
             <img src="../assets/client1.png">
             <img src="../assets/client2.png">
-            <img src="../assets/client3.png" style="width: 5vw;">
+            <img src="../assets/client3.png" style="width: 6vw;">
             <img src="../assets/client4.png">
             <img src="../assets/client5.png">
-            <img src="../assets/client6.png" style="width: 4vw;">
+            <img src="../assets/client6.png" style="width: 5vw;">
             <img src="../assets/client7.png">
         </div>
     </div>
@@ -19,20 +20,20 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .client-list {
     box-sizing: border-box;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     margin: auto;
 }
 
 .client-list h1 {
-    color: #5C6884;
-    letter-spacing: 1.5px;
     font-size: 30px;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .client-list .client-box {
@@ -45,8 +46,12 @@ export default {
     overflow: hidden;
 }
 
+.client-list img {
+    width: 10vw;
+}
+
 .client-list .client-box img {
-    width: 7vw;
+    width: 13vw;
     position: relative;
 }
 

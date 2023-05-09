@@ -4,7 +4,7 @@
         <div class="content">
             <h1 style="margin-bottom: 5px;">Hiring <span>Simplified,</span><img src="../assets/marker.png"
                     class="highlighter"></h1>
-            <h1>Talent Amplified!</h1>
+            <h1>Talent <span>Amplified.</span></h1>
             <p>Empowering companies and aspirants by streamlining hiring and advocating talent.</p>
             <a href="google.com">Know More</a>
         </div>
@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
 .hero-section img#horn {
-    height: 12vw;
+    height: 16vw;
     margin-right: 50px;
     transform: rotate(-20deg);
 }
@@ -33,11 +33,9 @@ export default {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 70vh;
-    margin-top: 13vh;
+    height: 80vh;
+    margin-top: 15vh;
 }
-
-
 
 .hero-section .content {
     display: flex;
@@ -50,9 +48,7 @@ export default {
 .hero-section h1 {
     position: relative;
     margin: 0;
-    letter-spacing: 1px;
-    font-size: 40px;
-    color: #5C6884;
+    font-size: 60px;
     text-align: center;
     z-index: 10;
 }
@@ -60,46 +56,45 @@ export default {
 .hero-section h1 span {
     color: #3AD4C5;
     margin-left: 10px;
+    font-weight: lighter;
 }
 
 .hero-section h1 img.highlighter {
     position: absolute;
-    left: 36%;
+    left: 34%;
     top: -40%;
-    height: 80px;
+    height: 120px;
     z-index: -1;
     pointer-events: none;
 }
 
 .hero-section p {
-    width: 250px;
-    font-size: 15px;
+    width: 520px;
+    font-size: 30px;
     text-align: center;
-    color: #5C6884;
+    font-style: italic;
+    font-weight: bolder;
 }
 
 .hero-section a {
     text-decoration: none;
-    color: white;
-    background-color: #5C6884;
-    width: 200px;
+    color: black;
+    background-color: rgb(130, 130, 255);
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 15px 30px;
     border-radius: 10px;
-    font-weight: lighter;
-    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .hero-section .blobs {
-    margin-left: 5px;
     z-index: -10;
 }
 
 .hero-section .blobs img#standing-man {
-    height: 300px;
+    height: 450px;
     align-self: baseline;
 }
 
@@ -131,7 +126,7 @@ export default {
     }
 
     .hero-section {
-        height: 35vh;
+        height: 60vh;
     }
 
     .hero-section h1 span.highlighter {

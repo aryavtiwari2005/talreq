@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="network-tile">
         <div class="content">
             <h2>TALENTLINK</h2>
@@ -10,7 +10,77 @@
             <img src="../assets/NetworkImg1.png" id="image2"><span class="rect2"></span>
         </div>
     </div>
+</template> -->
+
+<template>
+    <div class="boxes">
+        <div class="box1">
+            <img src="../assets/talentlink.png">
+            <h1>TalentLink</h1>
+            <p>Our patented methodology that ensuring opportunity meets the right talent, at the right time</p>
+        </div>
+        <div class="box2">
+            <p>talentLink is a unique recruitment methodology developed by talreq that enables us to effectively hire the best candidates for our clients.</p>
+        </div>
+    </div>
 </template>
+
+<style>
+.boxes {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.boxes .box1 {
+    background-color: #3AD4C5;
+    width: max-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 70px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.boxes .box1 p {
+    width: 450px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.boxes .box1 h1 {
+    margin-top: 0;
+    font-size: 36px;
+}
+
+.boxes .box1 img {
+    height: 100px;
+    position: absolute;
+    top: -45%;
+}
+
+.boxes .box2 {
+    background-color: #0095D9;
+    width: 300px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 100px;
+}
+
+@media screen and (max-width: 650px) {
+    .boxes .box1 {
+        margin: 20px 0;
+    }
+}
+</style>
 
 <script>
 export default {
@@ -18,7 +88,7 @@ export default {
 }
 </script>
 
-<style>
+<!-- <style>
 .network-tile {
     width: 50%;
     margin: auto;
@@ -158,4 +228,4 @@ export default {
         width: 140px;
     }
 }
-</style>
+</style> -->

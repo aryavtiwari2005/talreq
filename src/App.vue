@@ -41,5 +41,6 @@ export default {
 
 #app {
   font-family: 'Zabal';
+  overflow-x: hidden;
 }
 </style>

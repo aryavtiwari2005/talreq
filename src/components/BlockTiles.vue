@@ -40,7 +40,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .blockTiles {
     display: flex;
     justify-content: center;
@@ -51,6 +51,10 @@ export default {
     color: #5C6884;
     letter-spacing: 2px;
     margin: 0;
+}
+
+.blockTiles h2 {
+    margin: 0 0;
 }
 
 .blockTiles #phone {
@@ -64,38 +68,39 @@ export default {
     justify-content: center;
 }
 
-.blockTiles .blocks .blocks1 .block1, .blockTiles .blocks .blocks2 .block4 {
+.blockTiles .blocks .blocks2 .block3, .blockTiles .blocks .blocks2 .block4 {
     position: relative;
-    background-color: rgba(0, 149, 217, 0.5);
-    letter-spacing: 3px;
-    border-radius: 10px;
+    background-color: #0095D9;
+    font-weight: bolder;
+    border-radius: 20px;
     width: 250px;
-    height: 160px;
+    height: 180px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    margin: 5px;
+    margin: 10px;
 }
 
-.blockTiles .blocks .blocks1 .block2, .blockTiles .blocks .blocks2 .block3 {
+.blockTiles .blocks .blocks1 .block2, .blockTiles .blocks .blocks1 .block1 {
     position: relative;
-    background-color: rgba(92, 104, 132, 0.8);
-    color: white;
-    letter-spacing: 3px;
-    border-radius: 10px;
+    background-color: #3AD4C5;
+    border-radius: 20px;
     width: 250px;
-    height: 160px;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    margin: 5px;
+    margin: 10px;
 }
 
 .blockTiles .blocks img {
     z-index: 1;
-    height: 50px;
+    height: 100px;
 }
 
 .blockTiles .blocks .circle {
@@ -105,6 +110,7 @@ export default {
     border-radius: 50%;
     top: 8%;
     background-color: #D9D9D9;
+    display: none;
 }
 
 .blockTiles .content {

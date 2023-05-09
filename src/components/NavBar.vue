@@ -8,6 +8,7 @@
                     <div class="stuff" v-html="i.stuff"></div>
                 </li>
             </ul>
+            <a>Login <span>→</span></a>
         </div>
         <div class="hamburger" @click="hamburgerClick">
             <span class="line" id="line1" :class="{ active: !navToggle }"></span>
@@ -46,15 +47,16 @@ export default {
 <style scoped>
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
     position: fixed;
-    width: 100%;
+    width: calc(100% - 40px);
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
     z-index: 1000;
     top: 0;
-    height: 12vh;
+    height: 15vh;
 }
 
 .navbar .logo img {
@@ -71,6 +73,7 @@ export default {
 
 .navbar ul li {
     margin: 0 20px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,6 +100,25 @@ export default {
 }
 .navbar .hamburger {
     display: none;
+}
+
+.navbar .links {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .links a {
+    font-size: 30px;
+    border-radius: 30px;
+    background-color: rgb(0, 205, 205);
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.navbar .links a span {
+    color: #808080;
 }
 
 @media only screen and (min-width: 650px) {
@@ -163,7 +185,7 @@ export default {
     }
 
     .navbar .logo img {
-        height: 50px;
+        height: 40px;
     }
 
     .navbar .hamburger {
