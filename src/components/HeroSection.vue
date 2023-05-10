@@ -123,7 +123,7 @@ export default {
     }
 
     .hero-section p {
-        width: 70%;
+        width: 95%;
     }
 
     .hero-section h1 span.highlighter {
@@ -131,11 +131,9 @@ export default {
     }
 }
 
-@media screen and (max-width: 350px) {
-    /* .hero-section h1 img.highlighter {
-        top: 32%;
-        height: 75px;
-        left: 10%;
-    } */
+@media screen and (max-height: 550px) {
+    .hero-section {
+        height: 100vh;
+    }
 }
 </style>
