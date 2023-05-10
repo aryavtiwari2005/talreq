@@ -74,6 +74,7 @@ export default {
     text-align: center;
     font-style: italic;
     font-weight: bolder;
+    font-family: 'Zabal-Bold';
 }
 
 .hero-section a {

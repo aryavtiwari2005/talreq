@@ -33,6 +33,9 @@ export default {
 
 .client-list h1 {
     font-size: 30px;
+    font-weight: bold;
+    font-family: 'Zabal-Bold';
+    font-style: italic;
     margin: 15px 0;
 }
 

@@ -57,6 +57,7 @@
 
 .boxes .box1 h1 {
     margin-top: 0;
+    font-family: 'Zabal-Bold';
     font-size: 36px;
 }
 

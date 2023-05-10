@@ -48,13 +48,13 @@ export default {
 }
 
 .blockTiles h1 {
-    color: #5C6884;
-    letter-spacing: 2px;
-    margin: 0;
+    margin: 0 0;
 }
 
 .blockTiles h2 {
     margin: 0 0;
+    font-family: 'Zabal-Bold';
+    font-weight: lighter;
 }
 
 .blockTiles #phone {
@@ -115,8 +115,9 @@ export default {
 
 .blockTiles .content {
     display: flex;
-    width: 20%;
+    width: 30%;
     margin: 0 50px;
+    font-size: 24px;
     flex-direction: column;
 }
 
@@ -124,7 +125,7 @@ export default {
     margin: 0;
     margin-top: 5px;
     color: #5C6884;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .blockTiles .content p#computer {

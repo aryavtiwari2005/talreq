@@ -39,6 +39,12 @@ export default {
   src: local("Zabal"), url('./assets/ZabalDEMO-Regular.otf') format("opentype");
 }
 
+@font-face {
+  font-family: 'Zabal-Bold';
+  font-weight: bold;
+  src: local("Zabal-Bold"), url('./assets/ZabalDEMO-Ultra.otf') format("opentype");
+}
+
 #app {
   font-family: 'Zabal';
   overflow-x: hidden;

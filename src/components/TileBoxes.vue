@@ -78,6 +78,7 @@ export default {
 .tiles h1 {
     font-size: 36px;
     margin: 10px 0;
+    font-weight: lighter;
 }
 
 .tiles .box1 .sub-box1,
