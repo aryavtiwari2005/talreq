@@ -125,7 +125,7 @@ export default {
 @media screen and (max-width: 650px) {
     .end-footer {
         flex-direction: column;
-        height: 50vh;
+        height: max-content;
         align-items: center;
         padding: 10px;
     }
@@ -143,8 +143,8 @@ export default {
     }
 
     .end-footer img {
-        height: fit-content;
         width: 200px;
+        margin-bottom: 20px;
     }
     
     .end-footer .newsletter p {

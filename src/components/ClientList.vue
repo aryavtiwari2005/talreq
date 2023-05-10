@@ -1,6 +1,6 @@
 <template>
     <div class="client-list">
-        <img src="../assets/handshake.png">
+        <img src="../assets/handshake.png" class="handshake">
         <h1>Our Partners</h1>
         <div class="client-box">
             <img src="../assets/client1.png">
@@ -66,6 +66,10 @@ export default {
 
     .client-list .client-box img {
         width: 20vw;
+    }
+
+    .client-list img.handshake {
+        width: 80px;
     }
 }
 
