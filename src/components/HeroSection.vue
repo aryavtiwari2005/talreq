@@ -33,8 +33,9 @@ export default {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80vh;
-    margin-top: 16vh;
+    height: max-content;
+    margin-top: 120px;
+    padding-bottom: 20px;
 }
 
 .hero-section .content {
@@ -132,8 +133,8 @@ export default {
 }
 
 @media screen and (max-height: 550px) {
-    .hero-section {
+    /* .hero-section {
         height: 100vh;
-    }
+    } */
 }
 </style>

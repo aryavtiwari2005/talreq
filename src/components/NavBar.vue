@@ -133,6 +133,7 @@ export default {
         justify-content: space-between;
         position: fixed;
         width: calc(100% - 40px);
+        height: 100px;
         padding: 0 20px;
         transition: all 0.3s linear;
     }
