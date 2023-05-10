@@ -25,7 +25,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 .boxes {
     margin-top: 200px;
     display: flex;
@@ -79,6 +79,22 @@
 @media screen and (max-width: 650px) {
     .boxes .box1 {
         margin: 20px 0;
+        width: 90%;
+    }
+
+    .boxes .box1 h1 {
+        margin-bottom: 0;
+    }
+
+    .boxes .box1 p {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .boxes .box2 {
+        width: 90%;
+        border-radius: 20px;
+        margin:  0 0;
     }
 }
 </style>

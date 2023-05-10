@@ -29,6 +29,7 @@ export default {
     flex-direction: column;
     width: 100%;
     margin: auto;
+    margin-top: 20px;
 }
 
 .client-list h1 {

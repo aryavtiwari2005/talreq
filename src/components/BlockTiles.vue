@@ -160,5 +160,9 @@ export default {
         text-align: center;
         font-size: 20px;
     }
+
+    .blockTiles .blocks h2 {
+        font-size: 18px;
+    }
 }
 </style>

@@ -34,7 +34,7 @@ export default {
     justify-content: center;
     width: 100%;
     height: 80vh;
-    margin-top: 15vh;
+    margin-top: 16vh;
 }
 
 .hero-section .content {
@@ -126,24 +126,16 @@ export default {
         width: 70%;
     }
 
-    .hero-section {
-        height: 60vh;
-    }
-
     .hero-section h1 span.highlighter {
         width: 170px;
     }
 }
 
 @media screen and (max-width: 350px) {
-    .hero-section h1 img.highlighter {
+    /* .hero-section h1 img.highlighter {
         top: 32%;
         height: 75px;
         left: 10%;
-    }
-
-    .hero-section {
-        height: 60vh;
-    }
+    } */
 }
 </style>
