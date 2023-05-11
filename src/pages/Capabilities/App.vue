@@ -1,6 +1,6 @@
 <template>
     <NavBar></NavBar>
-    <div class="tileLinks" style="margin-top: calc(10vh + 20px);">
+    <div class="tileLinks" style="margin-top: 120px">
         <NavbarLinks v-for="i in boxes1" :image-link="i.img" :key="i.id" :title="i.title" :popupcontent="i.popupcontent"
             :popupid="i.popupid"></NavbarLinks>
     </div>

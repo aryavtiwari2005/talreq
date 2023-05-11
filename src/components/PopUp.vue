@@ -1,7 +1,7 @@
 <template>
     <div class="popup">
-        <h1>{{  heading }}</h1>
-        <p>{{ popupcontent }}</p>
+        <h1>{{ heading }}</h1>
+        <p v-html="popupcontent"></p>
     </div>
 </template>
 
