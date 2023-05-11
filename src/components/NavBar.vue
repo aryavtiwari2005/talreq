@@ -7,6 +7,8 @@
                 }}<span></span>
                     <div class="stuff" v-html="i.stuff"></div>
                 </li>
+                <li @click="routingThing('/insights')">Insights</li>
+                <li @click="routingThing('/company')">Company</li>
             </ul>
             <a>Login <span>→</span></a>
         </div>
@@ -26,9 +28,7 @@ export default {
             navToggle: true,
             elements: [
                 { id: id++, text: "Capabilities", stuff: '<div class="main-grid"> <div class="grid"> <h3>Executive Search</h3> </div> <div class="grid"> <h3>Professional Search</h3> </div> <div class="grid"> <h3>Contract Recruiters</h3> </div> <div class="grid"> <h3>Project Recruitment</h3> </div> <div class="grid"> <h3>Recruitment Process Outsourcing (RPO)</h3> </div> <div class="grid"> <h3>Interim Executives</h3> </div> <div class="grid"> <h3>Talent Mapping and Market Research</h3> </div> </div> <style> .main-grid .grid { font-size: 16px; } .main-grid .grid h3 { color: #5C6884; margin: 0 0; } .main-grid .grid p { font-size: 12px; margin: 0 0; } .main-grid .grid { padding: 10px; transition: all 0.2s linear; } .main-grid .grid:hover { border-radius: 10px; background-color: #f3f3f4; transform: translate(3px, 3px); transition: all 0.2s linear; } .main-grid .grid:hover h3 { color: #0095D9; } </style>', link: "/capabilities" },
-                { id: id++, text: "Industries", stuff: '<div class="main-grid"> <div class="grid"> <h3>Tech</h3> </div> <div class="grid"> <h3>Non-Tech</h3> </div> <div class="grid"> <h3>Startup</h3> </div> </div> <style> .main-grid .grid { font-size: 16px; } .main-grid .grid h3 { color: #5C6884; margin: 0 0; } .main-grid .grid p { font-size: 12px; margin: 0 0; } .main-grid .grid { padding: 10px; transition: all 0.2s linear; } .main-grid .grid:hover { border-radius: 10px; background-color: #f3f3f4; transform: translate(3px, 3px); transition: all 0.2s linear; } .main-grid .grid:hover h3 { color: #0095D9; } </style>', link: "/industries" },
-                { id: id++, text: "Insights", stuff: "ipsum dolor lorem", link: "/insights" },
-                { id: id++, text: "Company", stuff: "impsum lorem dolor", link: "/company" }
+                { id: id++, text: "Industries", stuff: '<div class="main-grid"> <div class="grid"> <h3>Tech</h3> </div> <div class="grid"> <h3>Non-Tech</h3> </div> <div class="grid"> <h3>Startup</h3> </div> </div> <style> .main-grid .grid { font-size: 16px; } .main-grid .grid h3 { color: #5C6884; margin: 0 0; } .main-grid .grid p { font-size: 12px; margin: 0 0; } .main-grid .grid { padding: 10px; transition: all 0.2s linear; } .main-grid .grid:hover { border-radius: 10px; background-color: #f3f3f4; transform: translate(3px, 3px); transition: all 0.2s linear; } .main-grid .grid:hover h3 { color: #0095D9; } </style>', link: "/industries" }
             ]
         }
     },
@@ -72,14 +72,21 @@ export default {
 }
 
 .navbar ul li {
-    margin: 0 20px;
+    margin: 0 10px;
     font-size: 30px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     position: relative;
+}
+
+.navbar ul li:hover {
+    background-color: #f3f3f4;
+    border-radius: 10px;
+    transition: all 0.2s linear;
 }
 
 .navbar ul li .stuff {
