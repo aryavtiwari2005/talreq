@@ -1,6 +1,5 @@
 <template>
     <div class="blockTiles">
-        <h1 id="phone">TalentLink</h1>
         <div class="blocks">
             <div class="blocks1">
                 <div class="block1">
@@ -28,7 +27,6 @@
             </div>
         </div>
         <div class="content">
-            <h1 id="computer">TalentLink</h1>
             <p>talentLink is a unique recruitment methodology developed by talreq that enables us to effectively hire the best candidates for our clients.</p>
         </div>
     </div>
