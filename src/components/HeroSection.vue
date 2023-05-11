@@ -2,7 +2,7 @@
     <div class="hero-section">
         <img src="../assets/horn.png" id="horn">
         <div class="content">
-            <h1 style="margin-bottom: 5px;">Hiring <span>Simplified,</span><img src="../assets/marker.png"
+            <h1 style="margin-bottom: 10px;">Hiring <span>Simplified,</span><img src="../assets/marker.png"
                     class="highlighter"></h1>
             <h1>Talent <span>Amplified.</span></h1>
             <p>Empowering companies and aspirants by streamlining hiring and advocating talent.</p>
