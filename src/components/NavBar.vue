@@ -73,6 +73,7 @@ export default {
 
 .navbar ul li {
     margin: 0 10px;
+    margin-bottom: 0;
     font-size: 30px;
     padding: 10px;
     display: flex;
@@ -99,7 +100,7 @@ export default {
     position: absolute;
 }
 
-.navbar ul li:hover .stuff {
+.navbar ul li:hover .stuff, .navbar ul li .stuff:hover {
     z-index: 10;
     position: absolute;
     opacity: 1;
@@ -111,7 +112,7 @@ export default {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
-    top: calc(100% + 5px);
+    top: calc(100%);
     transition: all 0.2s linear;
 }
 
