@@ -6,7 +6,7 @@
                     class="highlighter"></h1>
             <h1>Talent <span>Amplified.</span></h1>
             <p>Empowering companies and aspirants by streamlining hiring and advocating talent.</p>
-            <a href="google.com">Know More</a>
+            <a>Know More</a>
         </div>
         <div class="blobs">
             <img src="../assets/standing-man.png" id="standing-man">

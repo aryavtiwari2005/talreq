@@ -77,7 +77,7 @@ export default {
     position: absolute;
     width: 20px;
     height: 3px;
-    background-color: black;
+    background-color: white;
 }
 
 .pop-up .cross .line1 {
@@ -90,9 +90,14 @@ export default {
 
 .pop-up .cross {
     position: fixed;
-    top: 20%;
-    right: 33%;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 26%;
+    background-color: #5C6884;
+    border-radius: 50%;
+    right: 32%;
+    padding: 15px;
     cursor: pointer;
     z-index: 999;
 }
@@ -103,8 +108,8 @@ export default {
     }
 
     .pop-up .cross{
-        top: 16%;
-        right: 15%;
+        top: 26%;
+        right: 14%;
     }
 }
 </style>

@@ -15,11 +15,11 @@ export default {
 <style scoped>
 .popup {
     position: fixed;
-    top: 50%;
+    top: 25%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     width: 30%;
-    height: 50%;
+    height: max-content;
     padding: 50px;
     z-index: 999;
     border-radius: 10px;
@@ -29,7 +29,6 @@ export default {
 @media screen and (max-width: 700px) {
     .popup {
         width: 60%;
-        height: 60%;
     }
 }
 </style>

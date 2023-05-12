@@ -16,18 +16,15 @@
     <div class="boxes">
         <div class="box1">
             <img src="../assets/talentlink.png">
-            <h1>TalentLink</h1>
-            <p>Our patented methodology that ensuring opportunity meets the right talent, at the right time</p>
-        </div>
-        <div class="box2">
-            <p>talentLink is a unique recruitment methodology developed by talreq that enables us to effectively hire the best candidates for our clients.</p>
+            <h1>talentLink</h1>
+            <p>Our patented methodology that ensures opportunity meets the right talent, at the right time</p>
         </div>
     </div>
 </template>
 
 <style scoped>
 .boxes {
-    margin-top: 200px;
+    margin-top: 130px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -52,6 +49,7 @@
     width: 450px;
     text-align: center;
     font-size: 24px;
+    margin: 0 0;
     margin-bottom: 0;
 }
 
@@ -80,10 +78,6 @@
     .boxes .box1 {
         margin: 20px 0;
         width: 90%;
-    }
-
-    .boxes .box1 h1 {
-        margin-bottom: 0;
     }
 
     .boxes .box1 p {
