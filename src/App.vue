@@ -7,6 +7,7 @@
   <CompanyGoals></CompanyGoals>
   <BlockTiles></BlockTiles>
   <EndFooter></EndFooter>
+  <CookieBar></CookieBar>
 </template>
 
 <script>
@@ -17,11 +18,12 @@ import TileBoxes from './components/TileBoxes.vue';
 import NetworkTile from './components/NetworkTile.vue';
 import CompanyGoals from './components/CompanyGoals.vue'
 import BlockTiles from './components/BlockTiles.vue';
+import CookieBar from './components/CookieBar.vue';
 import EndFooter from './components/EndFooter.vue';
 export default {
   name: 'App',
   components: {
-    NavBar, HeroSection, ClientList, TileBoxes, NetworkTile, BlockTiles, EndFooter, CompanyGoals
+    NavBar, HeroSection, ClientList, TileBoxes, NetworkTile, BlockTiles, EndFooter, CompanyGoals, CookieBar
   }
 }
 </script>
