@@ -7,7 +7,9 @@
         </div>
     </div>
     <div class="pop-up" id="popupcand" style="display: none;">
-        <PopUp popupcontent="candidate content"></PopUp>
+        <PopUp
+            popupcontent='<form method="POST" name="google-sheet"> <div class="email" id="long"> Email: <input type="text" name="Email" required> </div> <div class="name" id="short"> Name: <input type="text" name="Name" required> </div> <div class="phone" id="short"> Phone no: <input type="text" name="Phone" required> </div> <div class="skills" id="long"> Skills: <input type="text" name="Skills" placeholder="Please list your top 4 skills" required> </div> <div class="ctc1" id="short"> Current CTC: <input type="text" name="CurCTC" required> </div> <div class="ctc2" id="short"> Expected CTC: <input type="text" name="ExpCTC" required> </div> <div class="notice" id="long"> Notice Period / Availability to join: <input type="text" name="Notice" required> </div> <input type="submit" value="Submit" name="Submit" id="submit"> </form> <style> form { display: flex; flex-wrap: wrap; width: 400px; } form div { display: flex; flex-direction: column; margin: 3px; } form #long { flex: 1 1 400px; } form #short { flex: 1 1 150px; } form #submit { margin: 5px 0px; background: #0095D9; color: white; font-size: 20px; font-family: "Zabal"; padding: 5px 10px; outline: none; border: none; } form div input { outline: none; height: 30px; border: 2px solid #5C6884; border-radius: 5px; padding: 0 5px; margin-top: 5px; } form div input:focus { border: 2px solid #0095D9; } @media screen and (max-width: 1200px) { form div { flex: 1 1 0px !important; } form { flex-direction: column; } form div input { width: 200px } form #submit { width: 200px; } } </style>'>
+        </PopUp>
         <div class="cross" @click="popup('popupcand')">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -51,6 +53,17 @@ export default {
             else document.querySelector('.pop-up#' + id).style = "display: none;"
             this.toggle = !this.toggle
         }
+    },
+    mounted() {
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwVu2TSjaCxcBEADRrlt0er6zr1VckylEQz69Tpakq2Z3r3IWs9I7EVeUZMMGltL-CP/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success! ' + response))
+                .catch(error => console.error('Error!', error.message))
+        })
     }
 }
 </script>
@@ -205,8 +218,15 @@ export default {
         height: 200px;
     }
 
-    .pop-up .cross{
+    .pop-up .cross {
         top: 26%;
         right: 14%;
     }
-}</style>
+}
+
+@media screen and (max-height: 750px) {
+    .pop-up .cross {
+        top: 11%;
+    }
+}
+</style>

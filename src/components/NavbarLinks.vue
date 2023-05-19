@@ -1,7 +1,10 @@
 <template>
     <div class="pop-up" :id="popupid" style="display: none;">
         <PopUp :popupcontent="popupcontent"></PopUp>
-        <div class="cross" @click="popup(popupid)"><div class="line1"></div><div class="line2"></div></div>
+        <div class="cross" @click="popup(popupid)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
     </div>
     <div class="tile" @click="popup(popupid)">
         <img :src="imageLink">
@@ -17,14 +20,14 @@ export default {
         PopUp
     },
     props: ['title', 'content', 'popupcontent', 'popupid', 'imageLink'],
-    data () {
+    data() {
         return {
             toggle: true
         }
-    },  
+    },
     methods: {
-        popup: function(id) {
-            if(this.toggle) {
+        popup: function (id) {
+            if (this.toggle) {
                 document.querySelector('.pop-up#' + id).style = "display: flex;"
             }
             else document.querySelector('.pop-up#' + id).style = "display: none;"
@@ -73,7 +76,8 @@ export default {
     z-index: 1000;
 }
 
-.pop-up .cross .line1, .pop-up .cross .line2 {
+.pop-up .cross .line1,
+.pop-up .cross .line2 {
     position: absolute;
     width: 20px;
     height: 3px;
@@ -107,9 +111,14 @@ export default {
         margin: 10px 0;
     }
 
-    .pop-up .cross{
+    .pop-up .cross {
         top: 26%;
         right: 14%;
     }
 }
-</style>
+
+@media screen and (max-height: 750px) {
+    .pop-up .cross {
+        top: 11%;
+    }
+}</style>

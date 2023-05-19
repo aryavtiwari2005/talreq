@@ -20,7 +20,7 @@ export default {
     transform: translate(-50%, 0%);
     width: 30%;
     height: max-content;
-    padding: 50px;
+    padding: 10px 50px;
     z-index: 999;
     border-radius: 10px;
     background-color: white;
@@ -29,6 +29,12 @@ export default {
 @media screen and (max-width: 700px) {
     .popup {
         width: 60%;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    .popup {
+        top: 10%;
     }
 }
 </style>
