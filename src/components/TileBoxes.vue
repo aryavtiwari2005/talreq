@@ -68,8 +68,7 @@ export default {
                 document.getElementById('uploadForm').submit();
             }
 
-            alert('Your data has been succesfully registered!!')
-            window.location.href = "/"
+            reader.readAsDataURL(file)
             // fetch(scriptURL, { method: 'POST', body: new FormData(form) })
             //     .then(response => {
             //         alert('Your data has been registered succesfully!!')
