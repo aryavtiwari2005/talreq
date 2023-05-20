@@ -10,7 +10,7 @@
                 <li @click="routingThing('/insights')">Insights</li>
                 <li @click="routingThing('/company')">Company</li>
             </ul>
-            <a>Login <span>→</span></a>
+            <a id="login-btn"><span>→</span></a>
         </div>
         <div class="hamburger" @click="hamburgerClick">
             <span class="line" id="line1" :class="{ active: !navToggle }"></span>
@@ -57,6 +57,21 @@ export default {
     z-index: 1000;
     top: 0;
     height: 100px;
+}
+
+.navbar #login-btn::before {
+    content: 'Login';
+}
+
+.navbar #login-btn:hover::before {
+    content: 'Coming Soon';
+}
+.navbar #login-btn:hover {
+    transition: all 0.2s linear;
+}
+
+.navbar #login-btn:hover span {
+    display: none;
 }
 
 .navbar .logo img {

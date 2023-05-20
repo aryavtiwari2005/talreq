@@ -3,8 +3,8 @@
         <div class="cookie-permission">
             <p>
                 This website uses cookies to enhance your experience. By using our site, you acknowledge
-                that you have read and understand our <a>Privacy Policy</a> and
-                <a>Cookie Policy</a>.
+                that you have read and understand our <a href="/privacypolicy">Privacy Policy</a> and
+                <a href="/cookiepolicy">Cookie Policy</a>.
             </p>
             <button @click="acceptCookies">Accept</button>
         </div>

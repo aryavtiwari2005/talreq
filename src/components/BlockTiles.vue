@@ -55,6 +55,7 @@ export default {
 .blockTiles {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 50px;
 }
 
@@ -138,11 +139,11 @@ export default {
     margin: 0;
     margin-top: 5px;
     color: #5C6884;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .content p::after {
-    content: "At Talreq, we are dedicated to helping corporates find the right hires for their teams. With a focus on both tech and non-tech roles across startups and established organizations, we provide tailored hiring solutions to meet the unique needs of each client.";
+    content: "At talreq, we are dedicated to helping corporates find the right hires for their teams. With a focus on both tech and non-tech roles across startups and established organizations, we provide tailored hiring solutions to meet the unique needs of each client.";
 }
 
 .content.hover1 p::after {
@@ -152,17 +153,17 @@ export default {
 
 .content.hover2 p::after {
     animation: contentAppear 0.5s linear;
-    content: "At Talreq, we understand that each industry has its unique requirements and demands when it comes to finding top talent. We specialize in providing recruitment solutions across a range of industries.";
+    content: "At talreq, we understand that each industry has its unique requirements and demands when it comes to finding top talent. We specialize in providing recruitment solutions across a range of industries.";
 }
 
 .content.hover3 p::after {
     animation: contentAppear 0.5s linear;
-    content: "Talreq understands the unique challenges that startups face when it comes to talent acquisition. That's why we developed TalentLink, our unique methodology that helps startups create a clear, and effective recruitment plan.";
+    content: "talreq understands the unique challenges that startups face when it comes to talent acquisition. That's why we developed TalentLink, our unique methodology that helps startups create a clear, and effective recruitment plan.";
 }
 
 .content.hover4 p::after {
     animation: contentAppear 0.5s linear;
-    content: "At Talreq, we are dedicated to helping corporates find the right hires for their teams. With a focus on both tech and non-tech roles across startups and established organizations, we provide tailored hiring solutions to meet the unique needs of each client.";
+    content: "At talreq, we are dedicated to helping corporates find the right hires for their teams. With a focus on both tech and non-tech roles across startups and established organizations, we provide tailored hiring solutions to meet the unique needs of each client.";
 }
 
 @keyframes contentAppear {
@@ -212,7 +213,7 @@ export default {
     }
 
     .content p::after {
-        content: "At Talreq, we are dedicated to helping corporates find the right hires for their teams. With a focus on both tech and non-tech roles across startups and established organizations, we provide tailored hiring solutions to meet the unique needs of each client." !important;
+        content: "At talreq, we are dedicated to helping corporates find the right hires for their teams. With a focus on both tech and non-tech roles across startups and established organizations, we provide tailored hiring solutions to meet the unique needs of each client." !important;
     }
 }
 </style>

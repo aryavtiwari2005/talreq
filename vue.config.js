@@ -31,6 +31,18 @@ module.exports = defineConfig({
       template: 'public/index.html',
       title: "Company || Talreq",
       chunks: ['chunk-vendors', 'chunk-common', 'company']
+    },
+    privacypolicy: {
+      entry: 'src/pages/PrivacyPolicy/main.js',
+      template: 'public/index.html',
+      title: "Privacy Policy || Talreq",
+      chunks: ['chunk-vendors', 'chunk-common', 'privacypolicy']
+    },
+    cookiepolicy: {
+      entry: 'src/pages/CookiePolicy/main.js',
+      template: 'public/index.html',
+      title: "Cookie Policy || Talreq",
+      chunks: ['chunk-vendors', 'chunk-common', 'cookiepolicy']
     }
   }
 })
