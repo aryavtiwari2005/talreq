@@ -21,10 +21,22 @@ module.exports = defineConfig({
       chunks: ['chunk-vendors', 'chunk-common', 'industries']
     },
     insights: {
-      entry: 'src/pages/Insights/main.js',
+      entry: 'src/pages/Insights1/main.js',
       template: 'public/index.html',
       title: "Insights || Talreq",
       chunks: ['chunk-vendors', 'chunk-common', 'insights']
+    },
+    insights1: {
+      entry: 'src/pages/Insights/main.js',
+      template: 'public/index.html',
+      title: "Insights || Talreq",
+      chunks: ['chunk-vendors', 'chunk-common', 'insights1']
+    },
+    insights2: {
+      entry: 'src/pages/Insights2/main.js',
+      template: 'public/index.html',
+      title: "Insights || Talreq",
+      chunks: ['chunk-vendors', 'chunk-common', 'insights2']
     },
     company: {
       entry: 'src/pages/Company/main.js',

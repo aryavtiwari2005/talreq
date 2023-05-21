@@ -2,24 +2,24 @@
     <div class="blockTiles">
         <div class="blocks">
             <div class="blocks1">
-                <div class="block1" @mouseover="hover1 = true;" @mouseleave="hover1 = false;" @click="routingThing('/capabilities   ')">
+                <div class="block1" @mouseover="hover1 = true;" @mouseleave="hover1 = false;" @click="routingThing('/capabilities   ')" id="blockThing">
                     <img src="../assets/Block1.png">
                     <span class="circle" id="circle1"></span>
                     <h2>Capabilities</h2>
                 </div>
-                <div class="block2" @mouseover="hover2 = true;" @mouseleave="hover2 = false;" @click="routingThing('/industries')">
+                <div class="block2" @mouseover="hover2 = true;" @mouseleave="hover2 = false;" @click="routingThing('/industries')" id="blockThing">
                     <img src="../assets/Block2.png">
                     <span class="circle" id="circle2"></span>
                     <h2>Industries</h2>
                 </div>
             </div>
             <div class="blocks2">
-                <div class="block3" @mouseover="hover3 = true;" @mouseleave="hover3 = false;" @click="routingThing('/insights')">
+                <div class="block3" @mouseover="hover3 = true;" @mouseleave="hover3 = false;" @click="routingThing('/insights')" id="blockThing">
                     <img src="../assets/Block3.png">
                     <span class="circle" id="circle3"></span>
                     <h2>Insights</h2>
                 </div>
-                <div class="block4" @mouseover="hover4 = true;" @mouseleave="hover4 = false;" @click="routingThing('/company')">
+                <div class="block4" @mouseover="hover4 = true;" @mouseleave="hover4 = false;" @click="routingThing('/company')" id="blockThing">
                     <img src="../assets/Block4.png">
                     <span class="circle" id="circle4"></span>
                     <h2>Company</h2>
@@ -214,6 +214,11 @@ export default {
 
     .content p::after {
         content: "At talreq, we are dedicated to helping corporates find the right hires for their teams. With a focus on both tech and non-tech roles across startups and established organizations, we provide tailored hiring solutions to meet the unique needs of each client." !important;
+    }
+
+    #blockThing {
+        width: 150px;
+        height: 150px;
     }
 }
 </style>

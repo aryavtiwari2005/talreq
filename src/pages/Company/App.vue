@@ -4,7 +4,7 @@
         <h2 style="text-align: center;">About Us</h2>
         <div class="image">
             <img src="https://media.discordapp.net/attachments/1023634058158276670/1106278726561443972/s.png">
-            At Talreq, we are dedicated to helping corporates find the right hires for their teams. With a focus on both
+            At talreq, we are dedicated to helping corporates find the right hires for their teams. With a focus on both
             tech
             and non-tech roles across startups and established organizations, we provide tailored hiring solutions to meet
             the
@@ -12,7 +12,7 @@
         </div>
         <br>
         <br>
-        Our unique methodology, TalentLink, sets us apart from other recruitment agencies. It enables us to effectively
+        Our unique methodology, talentLink, sets us apart from other recruitment agencies. It enables us to effectively
         source, screen, and match candidates with the right job requirements, ensuring a smooth and efficient hiring
         process.
         <br><br>

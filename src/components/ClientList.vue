@@ -4,22 +4,24 @@
         <h1>Our Partners</h1>
         <div class="client-boxes">
             <div class="second-client-box">
-                <img src="../assets/client1.png">
+                <img src="../assets/client1.jpg">
                 <img src="../assets/client2.png">
-                <img src="../assets/client3.png" style="width: 6vw;" class="phone">
+                <img src="../assets/client3.png" class="phone">
                 <img src="../assets/client4.png">
                 <img src="../assets/client5.png">
-                <img src="../assets/client6.png" style="width: 5vw;" class="phone">
+                <img src="../assets/client6.png" class="phone">
                 <img src="../assets/client7.png">
+                <img src="../assets/client8.png">
             </div>
             <div class="client-box">
-                <img src="../assets/client1.png">
+                <img src="../assets/client1.jpg">
                 <img src="../assets/client2.png">
-                <img src="../assets/client3.png" style="width: 6vw;" class="phone">
+                <img src="../assets/client3.png" class="phone">
                 <img src="../assets/client4.png">
                 <img src="../assets/client5.png">
-                <img src="../assets/client6.png" style="width: 5vw;" class="phone">
+                <img src="../assets/client6.png" class="phone">
                 <img src="../assets/client7.png">
+                <img src="../assets/client8.png">
             </div>
         </div>
     </div>
@@ -84,7 +86,9 @@ export default {
 }
 
 .client-list img {
-    width: 10vw;
+    width: 12vw;
+    aspect-ratio: 4/2;
+    object-fit: contain;
 }
 
 .client-list .client-box img {
@@ -102,11 +106,13 @@ export default {
         width: 90%;
     }
 
-    .client-list .client-box img , .client-list .second-client-box img {
+    .client-list .client-box img,
+    .client-list .second-client-box img {
         width: 150px;
     }
 
-    .client-list .client-box , .client-list .second-client-box {
+    .client-list .client-box,
+    .client-list .second-client-box {
         width: 1000px;
     }
 

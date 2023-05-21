@@ -112,7 +112,7 @@ export default {
     }
 
     .pop-up .cross {
-        top: 26%;
+        top: 16%;
         right: 14%;
     }
 }
