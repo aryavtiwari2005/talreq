@@ -3,7 +3,7 @@
     <div class="content">
         <h2 style="text-align: center;">About Us</h2>
         <div class="image">
-            <img src="https://media.discordapp.net/attachments/1023634058158276670/1106278726561443972/s.png">
+            <img src="../../assets/aboutUs.png">
             At talreq, we are dedicated to helping corporates find the right hires for their teams. With a focus on both
             tech
             and non-tech roles across startups and established organizations, we provide tailored hiring solutions to meet
