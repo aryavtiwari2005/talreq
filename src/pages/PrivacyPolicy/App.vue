@@ -1,6 +1,7 @@
 <template>
     <NavBar></NavBar>
     <div class="privacy-policy" style="margin-top: 100px;">
+        <img src="../../assets/privacy.webp">
         <h2>Privacy Policy</h2>
         <p>Last Updated: 20th May 2023</p>
         <p>Thank you for visiting talreq.com, talreq Solutions LLP website ("website"). We are committed to protecting your
@@ -108,5 +109,12 @@ export default {
 
 .privacy-policy {
     padding: 30px;
+}
+
+.privacy-policy img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 150px;
 }
 </style>  

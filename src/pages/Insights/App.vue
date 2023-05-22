@@ -44,21 +44,21 @@
         <br>
         <br>
         Low joining ratios can further exacerbate these challenges, making it crucial for startups to partner with
-        recruitment agencies such as Talreq that have the expertise and tools like TalentLink to identify and attract the
+        recruitment agencies such as talreq that have the expertise and tools like TalentLink to identify and attract the
         right talent.
         <br>
         <br>
-        <b>Talreq's Solutions:</b>
+        <b>talreq's Solutions:</b>
         <br>
         <br>
-        Talreq understands the unique challenges that startups face when it comes to talent acquisition. That's why we
+        talreq understands the unique challenges that startups face when it comes to talent acquisition. That's why we
         developed TalentLink, our unique methodology that helps startups create a clear, and effective recruitment plan;
         Assisted with a cutting-edge talent acquisition platform that leverages the latest AI and machine learning
         technologies to help startups identify, attract, and retain top talent. Our talent advocates execute this plan to
         get the correct hire, effectively.
         <br>
         <br>
-        <b>With Talreq, startups can:</b>
+        <b>With talreq, startups can:</b>
         <br>
         <br>
         <b>Source candidates more efficiently</b>: TalentLink uses a unique discovery methodology to understand and break
@@ -79,17 +79,17 @@
         saving time and effort.
         <br>
         <br>
-        <b>Talreq's Expertise:</b>
+        <b>talreq's Expertise:</b>
         <br>
         <br>
-        In addition to our cutting-edge technology, Talreq has deep expertise in the recruitment and tech industry and a
+        In addition to our cutting-edge technology, talreq has deep expertise in the recruitment and tech industry and a
         network of experienced talent advocates who understand the unique challenges of hiring for startups. Our team can
         help startups develop targeted recruitment strategies and provide valuable insights into the latest trends and
         technologies in the tech industry.
         <br>
         <br>
         In conclusion, hiring top talent is critical for the success of any startup, but it can be challenging in the
-        competitive tech industry. With Talreq's TalentLink methodology, AI platform and industry expertise, startups can
+        competitive tech industry. With talreq's TalentLink methodology, AI platform and industry expertise, startups can
         overcome these challenges and build a strong team of skilled professionals.
     </div>
     <TileBoxes></TileBoxes>

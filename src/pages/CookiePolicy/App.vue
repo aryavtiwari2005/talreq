@@ -1,6 +1,7 @@
 <template>
     <NavBar></NavBar>
     <div class="cookie-policy" style="margin-top: 100px;">
+        <img src="../../assets/cookie.webp">
         <h2>Cookie Policy</h2>
         <p>Effective Date: 20th May 2023</p>
         <h2>Introduction</h2>
@@ -59,5 +60,12 @@ export default {
 
 .cookie-policy {
     padding: 30px;
+}
+
+.cookie-policy img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 150px;
 }
 </style>  
