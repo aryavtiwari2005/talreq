@@ -1,7 +1,7 @@
 <template>
     <NavBar></NavBar>
     <div class="cookie-policy" style="margin-top: 100px;">
-        <h2>Cookie Policy for talreq.com</h2>
+        <h2>Cookie Policy</h2>
         <p>Effective Date: 20th May 2023</p>
         <h2>Introduction</h2>
         <p>This Cookie Policy explains how talreq Solutions LLP ("we," "us," or "our") uses cookies and similar tracking technologies when you visit our website, talreq.com (the "website"). This policy describes what cookies are, how we use them, and your choices regarding cookies.</p>

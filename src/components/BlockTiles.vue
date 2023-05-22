@@ -148,7 +148,7 @@ export default {
 
 .content.hover1 p::after {
     animation: contentAppear 0.5s linear;
-    content: "Our executive search services help organizations find top-level executives for key positions. We work closely with our clients to understand their specific requirements and use our extensive network and industry expertise to identify and attract the best candidates.";
+    content: "Our Talent acquisition services help organizations find top-level executives for key positions. We work closely with our clients to understand their specific requirements and use our extensive network and industry expertise to identify and attract the best candidates.";
 }
 
 .content.hover2 p::after {

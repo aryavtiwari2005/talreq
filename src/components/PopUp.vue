@@ -14,11 +14,12 @@ export default {
 
 <style scoped>
 .popup {
-    position: fixed;
+    position: absolute;
     top: 25%;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 30%;
+    font-size: 20px;
     height: max-content;
     padding: 10px 50px;
     z-index: 999;

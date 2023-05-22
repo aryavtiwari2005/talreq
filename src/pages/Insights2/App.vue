@@ -1,9 +1,9 @@
 <template>
     <NavBar></NavBar>
     <div class="content">
-        <h2 style="text-align: center;">Remote Work Environment- Adapting to the New Normal</h2>
+        <h2 style="text-align: center;">Remote Work Environment: Adapting to the New Normal</h2>
         <div class="image">
-            <img src="https://media.discordapp.net/attachments/1023634058158276670/1109762496727883816/23182648_1906.i201.008.P.m004.c30.recruiting_human_resources_isometric_icons-13.jpg">
+            <img src="https://media.discordapp.net/attachments/1023634058158276670/1110177054902734909/abc.jpg">
             The global pandemic has transformed the way businesses operate, with remote work becoming the new norm. As organizations adapt to this shift, it's essential to establish a productive and efficient remote work environment. In this article, we will explore how your company can navigate the challenges and embrace the opportunities presented by remote work.
         </div>
         <br>

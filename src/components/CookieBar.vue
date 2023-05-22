@@ -63,6 +63,7 @@ export default {
     border: none;
     background-color: #0095D9;
     padding: 10px 20px;
+    margin: 0 10px;
     color: white;
     outline: none;
     font-size: 20px;

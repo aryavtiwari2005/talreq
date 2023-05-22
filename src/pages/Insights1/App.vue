@@ -3,11 +3,11 @@
     <div class="tileThing">
         <div class="tile" @click="routing('/insights1')">
             <img src="https://media.discordapp.net/attachments/1023634058158276670/1106274090265890876/s.png">
-            <h1>The Challenges of Tech Hiring in Startups</h1>
+            <h1>Navigating the Talent Maze: The Challenges of Tech Hiring in Startups</h1>
         </div>
         <div class="tile" @click="routing('/insights2')">
-            <img src="https://media.discordapp.net/attachments/1023634058158276670/1109762496727883816/23182648_1906.i201.008.P.m004.c30.recruiting_human_resources_isometric_icons-13.jpg">
-            <h1>Remote Work Environment</h1>
+            <img src="https://media.discordapp.net/attachments/1023634058158276670/1110177054902734909/abc.jpg">
+            <h1>Remote Work Environment: Adapting to the New Normal</h1>
         </div>
     </div>
     <TileBoxes></TileBoxes>
@@ -64,9 +64,9 @@ export default {
     display: flex;
     color: #5C6884;
     flex-direction: column;
-    padding: 30px;
-    height: 150px;
-    width: 250px;
+    padding: 20px;
+    height: max-content;
+    width: 300px;
     border: 2px solid #0095D9;
     align-items: center;
     justify-content: center;
@@ -82,5 +82,11 @@ export default {
 
 .tileThing .tile img {
     height: 70px;
+}
+
+@media screen and (max-width: 650px) {
+    .tileThing .tile {
+        width: 250px;
+    }
 }
 </style>  

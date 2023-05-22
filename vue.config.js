@@ -5,55 +5,55 @@ module.exports = defineConfig({
     index: {
       entry: 'src/main.js',
       template: 'public/index.html',
-      title: "Home || Talreq",
+      title: "Home || talreq",
       chunks: ['chunk-vendors', 'chunk-common', 'index']
     },
     capabilities: {
       entry: 'src/pages/Capabilities/main.js',
       template: 'public/index.html',
-      title: "Capabilities || Talreq",
+      title: "Capabilities || talreq",
       chunks: ['chunk-vendors', 'chunk-common', 'capabilities']
     },
     industries: {
       entry: 'src/pages/Industries/main.js',
       template: 'public/index.html',
-      title: "Industries || Talreq",
+      title: "Industries || talreq",
       chunks: ['chunk-vendors', 'chunk-common', 'industries']
     },
     insights: {
       entry: 'src/pages/Insights1/main.js',
       template: 'public/index.html',
-      title: "Insights || Talreq",
+      title: "Insights || talreq",
       chunks: ['chunk-vendors', 'chunk-common', 'insights']
     },
     insights1: {
       entry: 'src/pages/Insights/main.js',
       template: 'public/index.html',
-      title: "Insights || Talreq",
+      title: "Insights || talreq",
       chunks: ['chunk-vendors', 'chunk-common', 'insights1']
     },
     insights2: {
       entry: 'src/pages/Insights2/main.js',
       template: 'public/index.html',
-      title: "Insights || Talreq",
+      title: "Insights || talreq",
       chunks: ['chunk-vendors', 'chunk-common', 'insights2']
     },
     company: {
       entry: 'src/pages/Company/main.js',
       template: 'public/index.html',
-      title: "Company || Talreq",
+      title: "Company || talreq",
       chunks: ['chunk-vendors', 'chunk-common', 'company']
     },
     privacypolicy: {
       entry: 'src/pages/PrivacyPolicy/main.js',
       template: 'public/index.html',
-      title: "Privacy Policy || Talreq",
+      title: "Privacy Policy || talreq",
       chunks: ['chunk-vendors', 'chunk-common', 'privacypolicy']
     },
     cookiepolicy: {
       entry: 'src/pages/CookiePolicy/main.js',
       template: 'public/index.html',
-      title: "Cookie Policy || Talreq",
+      title: "Cookie Policy || talreq",
       chunks: ['chunk-vendors', 'chunk-common', 'cookiepolicy']
     }
   }

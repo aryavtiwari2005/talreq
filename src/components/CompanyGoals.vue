@@ -19,10 +19,10 @@ export default {
     data() {
         return {
             achievements: [
-                { id: id++, title: 'Clients Helped', numbers: '200', img: 'https://media.discordapp.net/attachments/1023634058158276670/1105088926064054342/goals1.png' },
-                { id: id++, title: 'Candidates Placed', numbers: '2000', img: 'https://media.discordapp.net/attachments/1023634058158276670/1105088926248607764/goals2.png' },
-                { id: id++, title: 'Projects Completed', numbers: '500', img: 'https://media.discordapp.net/attachments/1023634058158276670/1105088926500270260/goals3.png' },
-                { id: id++, title: 'Profiles Scouted', numbers: '700', img: 'https://media.discordapp.net/attachments/1023634058158276670/1105088925854347294/goals4.png' }
+                { id: id++, title: 'Clients Helped', numbers: '11', img: 'https://media.discordapp.net/attachments/1023634058158276670/1105088926064054342/goals1.png' },
+                { id: id++, title: 'Candidates Placed', numbers: '75', img: 'https://media.discordapp.net/attachments/1023634058158276670/1105088926248607764/goals2.png' },
+                { id: id++, title: 'Projects Completed', numbers: '24', img: 'https://media.discordapp.net/attachments/1023634058158276670/1105088926500270260/goals3.png' },
+                { id: id++, title: 'Profiles Scouted', numbers: '46', img: 'https://media.discordapp.net/attachments/1023634058158276670/1105088925854347294/goals4.png' }
             ]
         }
     },
