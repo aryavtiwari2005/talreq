@@ -60,7 +60,7 @@ export default {
             })
             form3.submit()
             setTimeout(() => {
-                alert('Your data have been registered successfully!')
+                alert('Thank you for the details, we will contact you soon!')
                 btn.value = 'Submit'
                 btn.style.cursor = 'default'
                 btn.style.pointerEvents = 'all'

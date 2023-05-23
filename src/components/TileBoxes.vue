@@ -73,7 +73,7 @@ export default {
             })
             form2.submit()
             setTimeout(() => {
-                alert('Your data have been registered successfully!')
+                alert('Thank you for the details, our talent manager will contact you soon!')
                 btn.value = 'Submit'
                 btn.style.cursor = 'default'
                 btn.style.pointerEvents = 'all'
@@ -102,7 +102,7 @@ export default {
             }
             reader.readAsDataURL(file)
             setTimeout(() => {
-                alert('Your data have been registered successfully!')
+                alert('Thank you for the details, our talent advocate will contact you soon!')
                 btn.value = 'Submit'
                 btn.style.cursor = 'default'
                 btn.style.pointerEvents = 'all'
