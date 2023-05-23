@@ -1,7 +1,7 @@
 <template>
     <div class="pop-up" id="popupcorp" style="display: none;">
         <PopUp
-            popupcontent="<form method='POST' action='https://script.google.com/macros/s/AKfycbwAs7T-YmosrJTJ14nm2ttUiBk2-blimWGGN6me0XKmYogpzsve_ENYdAJZHzGqo3o_LQ/exec'> <div class='email' id='long'> Name of the organization: <input type='text' name='noo' required> </div> <div class='name' id='short'> Organization location: <input type='text' name='location' required> </div> <div class='phone' id='short'> Your name: <input type='text' name='name' required> </div> <div class='skills' id='long'> Your Designation: <input type='text' name='designation' placeholder='eg.Manager' required> </div> <div class='ctc1' id='short'> Email address: <input type='text' name='email' required> </div> <div class='ctc2' id='short'> Mobile number: <input type='text' name='mnumber' required> </div> <div class='service' id='long'> Which service are you interested in? <select name='service' required> <option value='Executive Search'>Executive Search</option> <option value='Professional Search'>Professional Search</option> <option value='Contract Recruiters'>Contract Recruiters</option> <option value='Staff Augmentation'>Staff Augmentation</option> <option value='RPO'>RPO</option> <option value='Talent Mapping and Market Research'>Talent Mapping and Market Research</option> <option value='Undecided'>Undecided</option> </select> </div> <div class='notice' id='long'> Please provide any additional Information: <input type='text' name='info'> </div> <input type='submit' value='Submit' name='Sumit' id='sumit'> </form> <style> form { display: flex; flex-wrap: wrap; width: 400px; font-size: 18px; } form select { margin-top: 5px; height: 40px; border: 2px solid #5C6884; border-radius: 5px; padding: 0 5px; outline: none; cursor: pointer; } form select:focus { outline: none; border-color: #0095D9; } form div { display: flex; flex-direction: column; margin: 3px; } form .resume { width: 100%; } form #long { flex: 1 1 400px; } form #short { flex: 1 1 150px; } form #sumit { margin: 5px 0px; background: #0095D9; color: white; font-size: 20px; font-family: 'Zabal'; padding: 5px 10px; outline: none; border: none; cursor: pointer; } form div input[type=text] { outline: none; height: 30px; border: 2px solid #5C6884; border-radius: 5px; padding: 0 5px; margin-top: 5px; } form div input[type=text]:focus { border: 2px solid #0095D9; } @media screen and (max-width: 1200px) { form div { flex: 1 1 0px !important; } form { flex-direction: column; } form select { width: 200px; } form div { width: 200px } form #sumit { width: 200px; } } </style>">
+            popupcontent="<form method='POST' action='https://script.google.com/macros/s/AKfycbwAs7T-YmosrJTJ14nm2ttUiBk2-blimWGGN6me0XKmYogpzsve_ENYdAJZHzGqo3o_LQ/exec' name='form2'> <div class='email' id='long'> Name of the organization: <input type='text' name='noo' required> </div> <div class='name' id='short'> Organization location: <input type='text' name='location' required> </div> <div class='phone' id='short'> Your name: <input type='text' name='name' required> </div> <div class='skills' id='long'> Your Designation: <input type='text' name='designation' placeholder='eg.Manager' required> </div> <div class='ctc1' id='short'> Email address: <input type='text' name='email' required> </div> <div class='ctc2' id='short'> Mobile number: <input type='text' name='mnumber' required> </div> <div class='service' id='long'> Which service are you interested in? <select name='service' required> <option value='Executive Search'>Executive Search</option> <option value='Professional Search'>Professional Search</option> <option value='Contract Recruiters'>Contract Recruiters</option> <option value='Staff Augmentation'>Staff Augmentation</option> <option value='RPO'>RPO</option> <option value='Talent Mapping and Market Research'>Talent Mapping and Market Research</option> <option value='Undecided'>Undecided</option> </select> </div> <div class='notice' id='long'> Please provide any additional Information: <input type='text' name='info'> </div> <input type='submit' value='Submit' name='Sumit' id='sumit'> </form> <style> form { display: flex; flex-wrap: wrap; width: 400px; font-size: 18px; } form select { margin-top: 5px; height: 40px; border: 2px solid #5C6884; border-radius: 5px; padding: 0 5px; outline: none; cursor: pointer; } form select:focus { outline: none; border-color: #0095D9; } form div { display: flex; flex-direction: column; margin: 3px; } form .resume { width: 100%; } form #long { flex: 1 1 400px; } form #short { flex: 1 1 150px; } form #sumit { margin: 5px 0px; background: #0095D9; color: white; font-size: 20px; font-family: 'Zabal'; padding: 5px 10px; outline: none; border: none; cursor: pointer; } form div input[type=text] { outline: none; height: 30px; border: 2px solid #5C6884; border-radius: 5px; padding: 0 5px; margin-top: 5px; } form div input[type=text]:focus { border: 2px solid #0095D9; } @media screen and (max-width: 1200px) { form div { flex: 1 1 0px !important; } form { flex-direction: column; } form select { width: 200px; } form div { width: 200px } form #sumit { width: 200px; } } </style>">
         </PopUp>
         <div class="cross" @click="popup('popupcorp')">
             <div class="line1"></div>
@@ -58,19 +58,56 @@ export default {
     },
     mounted() {
         const form = document.forms['google-sheet']
+        const form2 = document.forms['form2']
+
+        form2.addEventListener('submit', (e) => {
+            e.preventDefault();
+            var btn = form2.Sumit
+            btn.value = 'Submitting'
+            btn.style.pointerEvents = 'none'
+            btn.style.cursor = 'not-allowed'
+            form2.action = 'javascript:void(0)';
+            fetch('https://script.google.com/macros/s/AKfycbwAs7T-YmosrJTJ14nm2ttUiBk2-blimWGGN6me0XKmYogpzsve_ENYdAJZHzGqo3o_LQ/exec', {
+                method: 'POST',
+                body: new FormData(form2)
+            })
+            form2.submit()
+            setTimeout(() => {
+                alert('Your data have been registered successfully!')
+                btn.value = 'Submit'
+                btn.style.cursor = 'default'
+                btn.style.pointerEvents = 'all'
+                window.location.href = '/'
+            }, 5000)
+        })
 
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             var reader = new FileReader();
+            var btn = form.Sumit
+            btn.value = 'Submitting'
+            btn.style.pointerEvents = 'none'
+            btn.style.cursor = 'not-allowed'
             var file = document.getElementById('attach').files[0];
+            form.action = 'javascript:void(0)';
 
             reader.onload = function () {
                 document.getElementById('fileContent').value = reader.result;
                 document.getElementById('filename').value = file.name;
+                fetch('https://script.google.com/macros/s/AKfycbyBDH12Ve389mCQri5RGKQd_1h7ER_B1-Wpx9dRYRq7JXVZLd2qGQjQo0Np-47vRLLE/exec', {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
                 document.getElementById('uploadForm').submit();
             }
-
             reader.readAsDataURL(file)
+            setTimeout(() => {
+                alert('Your data have been registered successfully!')
+                btn.value = 'Submit'
+                btn.style.cursor = 'default'
+                btn.style.pointerEvents = 'all'
+                window.location.href = '/'
+            }, 5000)
         })
     }
 }

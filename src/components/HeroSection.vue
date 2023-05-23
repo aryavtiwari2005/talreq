@@ -2,7 +2,7 @@
     <div class="hero-section">
         <div class="pop-up" id="knowmore" style="display: none;">
             <PopUp
-                popupcontent='<form method="POST" action="https://script.google.com/macros/s/AKfycbwrk9RrFLrIJcmlkZ-RUcltMdkt8iIP0EVuaHqe-BJqP5f-8PftqbKeg1LNrxzijV8TtA/exec"> <div class="name" id="short"> Name: <input type="text" name="name" required> </div> <div class="phone" id="short"> Phone no: <input type="text" name="phone" required> </div> <div class="email" id="long"> Email: <input type="text" name="email" required> </div> <div class="service" id="long"> Are you a? <select name="customerType" required> <option value="Candidate">Candidate</option> <option value="Corporate">Corporate</option> <option value="Vendor">Vendor</option> </select> </div> <input type="submit" value="Submit" name="Sumit" id="sumit"> </form> <style> form { display: flex; flex-wrap: wrap; width: 400px; } form div { display: flex; flex-direction: column; margin: 3px; } form .resume { width: 100%; } form #long { flex: 1 1 400px; } form #short { flex: 1 1 150px; } form #sumit { margin: 5px 0px; background: #0095D9; color: white; font-size: 20px; font-family: "Zabal"; padding: 5px 10px; outline: none; border: none; cursor: pointer; } form div input[type=text] { outline: none; height: 30px; border: 2px solid #5C6884; border-radius: 5px; padding: 0 5px; margin-top: 5px; } form div input[type=text]:focus { border: 2px solid #0095D9; } @media screen and (max-width: 1200px) { form div { flex: 1 1 0px !important; } form { flex-direction: column; } form div input { width: 200px } form .resume { width: 200px; } form #sumit { width: 200px; } } </style>'>
+                popupcontent='<form method="POST" action="https://script.google.com/macros/s/AKfycbwrk9RrFLrIJcmlkZ-RUcltMdkt8iIP0EVuaHqe-BJqP5f-8PftqbKeg1LNrxzijV8TtA/exec" name="form3"> <div class="name" id="short"> Name: <input type="text" name="name" required> </div> <div class="phone" id="short"> Phone no: <input type="text" name="phone" required> </div> <div class="email" id="long"> Email: <input type="text" name="email" required> </div> <div class="service" id="long"> Are you a? <select name="customerType" required> <option value="Candidate">Candidate</option> <option value="Corporate">Corporate</option> <option value="Vendor">Vendor</option> </select> </div> <input type="submit" value="Submit" name="Sumit" id="sumit"> </form> <style> form { display: flex; flex-wrap: wrap; width: 400px; } form div { display: flex; flex-direction: column; margin: 3px; } form .resume { width: 100%; } form #long { flex: 1 1 400px; } form #short { flex: 1 1 150px; } form #sumit { margin: 5px 0px; background: #0095D9; color: white; font-size: 20px; font-family: "Zabal"; padding: 5px 10px; outline: none; border: none; cursor: pointer; } form div input[type=text] { outline: none; height: 30px; border: 2px solid #5C6884; border-radius: 5px; padding: 0 5px; margin-top: 5px; } form div input[type=text]:focus { border: 2px solid #0095D9; } @media screen and (max-width: 1200px) { form div { flex: 1 1 0px !important; } form { flex-direction: column; } form div input { width: 200px } form .resume { width: 200px; } form #sumit { width: 200px; } } </style>'>
             </PopUp>
             <div class="cross" @click="popup('knowmore')">
                 <div class="line1"></div>
@@ -43,6 +43,30 @@ export default {
             else document.querySelector('.pop-up#' + id).style = "display: none;"
             this.toggle = !this.toggle
         }
+    },
+    mounted() {
+        const form3 = document.forms['form3']
+
+        form3.addEventListener('submit', (e) => {
+            e.preventDefault();
+            var btn = form3.Sumit
+            btn.value = 'Submitting'
+            btn.style.pointerEvents = 'none'
+            btn.style.cursor = 'not-allowed'
+            form3.action = 'javascript:void(0)';
+            fetch('https://script.google.com/macros/s/AKfycbwrk9RrFLrIJcmlkZ-RUcltMdkt8iIP0EVuaHqe-BJqP5f-8PftqbKeg1LNrxzijV8TtA/exec', {
+                method: 'POST',
+                body: new FormData(form3)
+            })
+            form3.submit()
+            setTimeout(() => {
+                alert('Your data have been registered successfully!')
+                btn.value = 'Submit'
+                btn.style.cursor = 'default'
+                btn.style.pointerEvents = 'all'
+                window.location.href = '/'
+            }, 5000)
+        })
     }
 }
 </script>
