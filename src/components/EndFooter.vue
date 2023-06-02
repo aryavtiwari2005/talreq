@@ -1,6 +1,13 @@
 <template>
     <div class="end-footer">
-        <img src="../assets/logo-main.png">
+        <div class="imgs">
+            <img src="../assets/logo-main.png" id="logo">
+            <div class="iso">
+                <img src="../assets/iso_1.jpg">
+                <img src="../assets/iso_2.jpg">
+                <img src="../assets/iso_3.jpg">
+            </div>
+        </div>
         <div class="columns">
             <ul id="first">
                 <li>
@@ -67,8 +74,19 @@ export default {
     height: 200px;
 }
 
-.end-footer img {
+.end-footer img#logo {
     height: 55px;
+}
+
+.end-footer .iso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.end-footer .iso img {
+    height: 60px;
 }
 
 .end-footer a {
@@ -177,8 +195,11 @@ export default {
         margin: 0 10px;
     }
 
-    .end-footer img {
+    .end-footer img#logo {
         width: 200px;
+    }
+
+    .end-footer .iso {
         margin-bottom: 20px;
     }
     
