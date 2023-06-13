@@ -78,6 +78,13 @@ export default {
     height: 55px;
 }
 
+
+.end-footer .imgs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .end-footer .iso {
     display: flex;
     align-items: center;
@@ -86,7 +93,7 @@ export default {
 }
 
 .end-footer .iso img {
-    height: 60px;
+    height: 80px;
 }
 
 .end-footer a {
